@@ -1,0 +1,25 @@
+{
+  "name": "jest-slow-test-reporter",
+  "version": "1.0.0",
+  "description": "Reports the slowest tests in your jest suite.",
+  "main": "jest-slow-test-reporter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jodonnell/jest-slow-test-reporter.git"
+  },
+  "keywords": [
+    "jest",
+    "slow",
+    "tests",
+    "reporter"
+  ],
+  "author": "Jacob O'Donnell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jodonnell/jest-slow-test-reporter/issues"
+  },
+  "homepage": "https://github.com/jodonnell/jest-slow-test-reporter#readme"
+}
