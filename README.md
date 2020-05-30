@@ -1,6 +1,6 @@
 # Slow test reporter for jest
 
-No dependencies, no interactive shell needed.  Prints out the slowest 10 tests in your app.  Can also print warnings when a test exceeds X ms.
+No dependencies, no interactive shell needed.  Prints out the slowest numTests tests in your app.  Can also print warnings when a test exceeds warnOnSlowerThan ms.
 
 ## Installation
 
@@ -19,13 +19,18 @@ For example, create a `jest.config.js` file containing:
 
 ```javascript
 module.exports = {
-  verbose: false,
   reporters: [
-    ['jest-slow-test-reporter', {"numTests": 8, "warnOnSlowerThan": 300, "color": true}]
+    ['jest-slow-test-reporter', {
+      "numTests": 8, 
+      "warnOnSlowerThan": 300, 
+      "color": true,
+      "showSummary": false
+    }]
   ]
 };
 ```
 
-numTests controls how many slow tests to print.
-warnOnSlowerThan will warn when a test exceeds this time in milliseconds.
-color will make the warnOnSlowerThan warning messages print in red
+- numTests controls how many slow tests to print.
+- warnOnSlowerThan will warn when a test exceeds this time in milliseconds.
+- color will make the warnOnSlowerThan warning messages print in red
+- showSummary (default true) will disable the summary if false
