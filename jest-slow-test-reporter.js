@@ -6,6 +6,8 @@ class JestSlowTestReporter {
     }
 
     onRunComplete() {
+        if (this._options.showSummary == false) return;
+        
         console.log();
 
         this._slowTests.sort(function(a, b) {
