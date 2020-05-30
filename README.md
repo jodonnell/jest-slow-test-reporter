@@ -20,6 +20,7 @@ For example, create a `jest.config.js` file containing:
 ```javascript
 module.exports = {
   reporters: [
+    "default",
     ['jest-slow-test-reporter', {
       "numTests": 8, 
       "warnOnSlowerThan": 300, 
